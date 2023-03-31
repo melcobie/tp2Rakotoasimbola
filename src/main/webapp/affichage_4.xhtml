@@ -19,11 +19,6 @@
         <ui:repeat value="#{otherBean.nombresSuivants}" var="n" varStatus="status">
             #{n + 1}#{! status.last ? ', ' : ''}
         </ui:repeat>
-        <h:form>
-            <h:link outcome="formulaire_4?nb=#{otherBean.nombre}" value="Saisir un autre nombre"/>
-<!--            <h:link outcome="formulaire_4" value="Saisir un autre nombre">
-                <f:param name="nb" value="#{otherBean.nombre}"/>
-            </h:link>-->
-        </h:form>
+        <h:link outcome="formulaire_4?nb=#{otherBean.nombre}" value="Saisir un autre nombre"/>
     </h:body>
 </html>
